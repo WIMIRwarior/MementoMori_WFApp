@@ -76,6 +76,12 @@ namespace MementoMori
                                        lifetimeExpentacyForChoosenCountry + " years.\nYou are " + $"{calculated_age:F0}" + " years old.\nSo technicaly You should be dead :) ");
                     }
                 }
+                if(calculated_age==0)
+                {
+                    MessageBox.Show("Statistic lifetime expentacy for " + selectedItem + " is approx. " +
+                                        lifetimeExpentacyForChoosenCountry + " years.\nYou just have been born so you have technicaly You have " + lifetimeLeft +
+                                        " years left.\nUse it wisely Kid :) ");
+                }
             }
             else
             {
